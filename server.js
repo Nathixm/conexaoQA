@@ -37,7 +37,7 @@ const options = {
         },
         servers: [
             {
-                url: process.env.NODE_ENV === 'production' ? 'https://conexaoqa.herokuapp.com' : 'http://localhost:5000',
+                url: process.env.NODE_ENV === 'production' ? 'https://conexaoqa.herokuapp.com' : 'http://localhost:5001',
             },
         ],
     },
@@ -61,6 +61,6 @@ if(process.env.NODE_ENV === 'production') {
     })
 }
 
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 5001
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`))
